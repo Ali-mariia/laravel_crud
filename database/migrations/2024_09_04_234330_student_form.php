@@ -21,10 +21,10 @@ return new class extends Migration
             $table->string('religion',30);
             $table->string('nationality',30);
             $table->string ('DOB',30);
-            $table->string('Email',30)->unique()->nullable();
-            $table->string('phone',30) ->unique();
+            $table->string('Email',30)->nullable();
+            $table->string('phone',30);
             $table->enum( 'Gender',['M','F','O']);
-            $table->boolean('status') ->default(1) ->nullable();
+          
             $table->timestamps();
         });
     

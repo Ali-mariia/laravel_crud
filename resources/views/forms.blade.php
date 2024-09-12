@@ -167,7 +167,8 @@
     <script src="vendor/datepicker/daterangepicker.js"></script>
 
     <!-- Main es was made by Colorlib (https://colorlib.com) -->
-JS-->
+
+    JS-->
     <script src="js/global.js"></script>
 
 </body><!-- This templat

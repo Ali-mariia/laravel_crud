@@ -12,6 +12,10 @@ Route::get('/form', function () {
 
 route::get('/',[studentFormController::class,'index']);
 
-route::post('store',[studentFormController::class,'store']);
+route::post('/store',[studentFormController::class,'store']);
 
+route::get('/viewform',[studentFormController::class,'view']);
 
+route::get('/delete/{id}',[studentFormController::class,'delete']) ->name('form.delete');
+route::get('/edit_record/{id}',[studentFormController::class,'edit_record']);
+route::post('/update_data/{id}',[studentFormController::class,'update_data']);
